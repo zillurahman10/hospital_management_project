@@ -7,39 +7,52 @@ body{
 li{
     list-style: none;
 }
-nav{
-    background-color:aqua;
-
-}
 .menu{
     font-size: 20px;
 }
 .menu:hover{
+    color: #007E85;    ;
+    cursor: pointer;
+
+}
+#sign_up{
+    color: #007E85;
+}
+
+.login_btn {
+    background-color: #007E85;
     color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login_btn:hover {
+    background-color: #01474b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 16px;
     cursor: pointer;
 }
+
 
 .banner-container{
     width: 1200px;
     margin: auto;
+    margin-top: 30px;
     padding: 30px;
 
 }
-.banner{
-    height: 450px;
-    margin: auto;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    background: linear-gradient(cyan,rgb(33, 137, 137));
-    box-shadow: 4px 4px 8px gray;
-    border-radius:10px;
-    /* padding: 30px; */
-}
 .bn-img{
-    width: 325px;
-    margin-top:-50px;
+    width: 550px;
+    margin-top:-120px;
 }
 .service-container{
     width: 1200px;
@@ -49,21 +62,20 @@ nav{
 }
 .title{
     font-size: 44px;
-    color: aqua;
+    color: #007E85;
+    font-weight: 700;
     text-align: center;
 
 }
 .doctors-container{
-
     margin-top: 50px;
-    padding: 30px;
 }
 .doc-card{
-    width: 300px;
-
-    height: 360px;
-    box-shadow: 4px 4px 8px gray;
-    border-radius: 10px;
+    width: 273px;
+    height: 309px;
+    box-shadow: 1px 1px 4px gray;
+    background-color: white;
+    border-radius: 24px;
     text-align:center;
     padding: 15px;
 }
@@ -73,10 +85,23 @@ nav{
     border-radius: 50px;
 }
 #search{
-    padding:10px;
-    width: 75%;
+    padding-left: 30px;
+    font-size: 20px;
+    border-radius: 30px 0px 0px 30px;
+    width: 881px;
+    height: 61px;
     border: none;
 }
+
+.search-btn {
+    border: none;
+    height: 61px;
+    width: 80px;
+    font-weight: 500;   
+    border-radius: 0px 30px 30px 0px;
+    background-color: #5dd4ef;
+}
+
 #noData{
     display: none;
 }
@@ -87,23 +112,10 @@ nav{
 #spinner{
     display: none;
 }
-.review-card{
-    width: 250px;
-    height: 300px;
-    box-shadow: 4px 4px 8px gray;
-    border-radius:10px;
-    text-align: center;
-    padding: 10px;
-}
-.review-card img{
-    width: 70px;
-    height: 70px;
-    border-radius:50px;
-}
 
 footer{
     padding: 50px;
- background: linear-gradient(66deg, #1CA8C7 -5.25%, #439FA5 46.76%, #4C7D8C 98.77%);;
+    background: linear-gradient(66deg, #1CA8C7 -5.25%, #439FA5 46.76%, #4C7D8C 98.77%);;
 }
 
 .doctor-img img{
@@ -150,9 +162,9 @@ border-radius:100px;
 }
 
 .doctor{
-    width: 350px;
-    height:400px;
-    box-shadow: 4px 4px 8px gray;
+    width: 273px;
+    height: 309px;
+    /* box-shadow: 10px 10px 10px gray;c */
     text-align: center;
     background-color:gray;
     color: white;
@@ -163,4 +175,35 @@ border-radius:100px;
     padding: 20px;
     margin: 20px;
     border: none;
+}
+
+.nav-title {
+    font-family: "Marck Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}  
+
+.banner {
+    background: linear-gradient(12deg, #b5f9f1, #7ee8f6, #56BED4);
+    padding: 10px 40px 0;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+
+.learn-more {
+    font-weight: 500;
+    font-size: 18px;
+    font-style: normal;
+    color: #007E85;
+    text-decoration: none;
+}
+.review-card{
+    width: 350px;
+    height: 300px;
+    box-shadow: 1px 1px 8px gray;
+    border-radius: 20px;
+}
+.review-img {
+    width: 80px;
+    border-radius: 100px;
 }
